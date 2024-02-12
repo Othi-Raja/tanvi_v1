@@ -345,7 +345,8 @@
         width: 60%;
     }
     .best-award-con {
-        left: 68px;
+        /* left: 68px; */
+        display: non;
     }    
     .banner-right-con{
         display: inline-block;
@@ -355,7 +356,7 @@
         left: 110px;
     }
     .happy-con {
-        right: 152px;
+        right: -56px;
         left: auto;
     }
     .header-con {
