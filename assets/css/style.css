@@ -1,41 +1,4 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
 
-Project:    Folioflix
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Body
-2. Navigation / #navbar
-3. banner section / #banner
-4. service section / #service
-5.  Skills section / #Skills
-6. Portfolio section / #Portfolio
-7. testimonials section / #testimonials
-8. Blog section/ #Blog
-9. Contact section /#Contact
-10. weight footer section / #weight footer
-11. footer section / #footer
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-# [Color codes]
-
-    --primary-color:#3f396d;
-    --secondary-color:#07003b;
-    --accent:#fca61f;
-    --text-color: #7d7789;
-    --off-white-color: #f0f4ff;
-    --light-purple-color:#6f34fe;
-    --white-color:#fff;
-    --light-grey-color:#f2f2ff;
-# */
-/*------------------------------------------------------------------
-[Typography]
-
-Body copy:     'Josefin Sans', sans-serif;
-
--------------------------------------------------------------------*/
 ::-webkit-scrollbar{
     display: none;
 }
@@ -44,6 +7,7 @@ Body copy:     'Josefin Sans', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 html{
     scroll-behavior: smooth;
@@ -51,6 +15,7 @@ html{
 body{
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 400;
+    background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 100%);
 }
 /***** navbar banner css****/
 .header-and-banner-con{
@@ -63,9 +28,95 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     font-size: small;
 }
 .header-con{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+/* Define a basic style for the element */
+#hoverUp {
+    transition: transform 0.3s ease-in-out; /* Add smooth transition */
+}
+ 
+/* Apply the hover effect */
+#hoverUp:hover {
+    transform: translateY(-10px); /* Adjust the translation for the desired effect */
+   
+    
+}
+ .cardBody{
+    margin-bottom: 10px;
+     
+    padding-right: 0px;
+   
+ }
+ 
+ .cardBody>.card{
+    border-radius: 10px;
+ }
+ 
+ .card-text{
+    color: gray;
+    font-size: small;
+ }
+ .card-title{
+    font-weight: bold;
+ }
+ .card-body:hover .icon-hidden {
+      color: orange;
+     transform: translateX(10px); 
+     
+    
+  }
+  
+.card{
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    
+}
+.card:hover{
+    border: 1px solid blue;
+}
+  .icon-hidden {
+   
+   transition: all 200ms linear;
+  }
+ .icon-hidden{
+    font-size: 30px;
+ }
+ .joinNow{
+    background-color: rgba(128, 128, 128, 0.114);
+    border-radius: 30px;
+    padding:10px ;
+    cursor: pointer;
+ }
+ .Jointxt{
+    padding-left: 20px;
+ }
+ .topmateText{
+    font-weight: lighter;
+    font-size: small;
+    text-align: start;
+    padding-left: 10px;
+ }
+ .icon-container{
+    padding-top: 10px;
+    padding-right: 20px;
+ }
+  /* Centered Circle Image */
+  .circle-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Scrollable Cards Container */
+  .scrollable-cards {
+    max-height: 300px;
+    overflow-y: auto;
+  }
 .header-con .nav-item{
     padding: 0 18px;
     font-size: 20px;
@@ -240,7 +291,7 @@ background: linear-gradient(33deg, rgba(242,242,255,1) 0%, rgba(235,249,255,1) 1
     height: 38px;
     position: absolute;
     bottom: 190px;
-    right: -116px;
+    right: 0px;
     background: url(../image/corn-left-icon.png) no-repeat top left;
     animation: mover 1s infinite alternate;
     -webkit-animation: mover 1s infinite alternate;
